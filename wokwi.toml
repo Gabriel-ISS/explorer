@@ -1,5 +1,0 @@
-[wokwi]
-version = 1
-firmware = ".pio/build/esp8266nodemcuv3/firmware.bin"
-elf = ".pio/build/esp8266nodemcuv3/firmware.elf"
-gdbServerPort = 3333
