@@ -69,6 +69,19 @@ void setup()
 }
 
 
+void turnOnLED()
+{
+  // Enciende el LED integrado
+  // Se usa LOW porque el led integrado opera en modo "activo bajo"
+  digitalWrite(ledPin, LOW);
+}
+void turnOfLED()
+{
+  // Enciende el LED integrado
+  // Se usa HIGH porque el led integrado opera en modo "activo bajo"
+  digitalWrite(ledPin, HIGH);
+}
+
 String lastMessage = "";
 void handleMessage(String message)
 {
@@ -91,13 +104,11 @@ void handleMessage(String message)
     switch (command)
     {
     case LED_ON:
-      digitalWrite(ledPin, HIGH);
-      Serial.println("Encendido");
+      turnOnLED();
       break;
 
     case LED_OFF:
-      digitalWrite(ledPin, LOW);
-      Serial.println("Apagado");
+      turnOfLED();
       break;
     
     case MOVE_FORWARD:
