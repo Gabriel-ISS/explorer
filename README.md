@@ -27,4 +27,3 @@ Controlador de ESP8266 NodeMCU V3 para recibir señales a traves de UDP y contro
     #endif // CONFIG_H 
     ```
 1. Haz la build de tu proyecto y subelo con PlatformIO. Recuerda configurar correctamente el puerto de la placa en `platformio.ini`. Puedes visualizar el IP y puerto de conexión en el monitor serial y hacer pruebas a traves de `Packet Sender`.
-1. Sube tu proyecto
